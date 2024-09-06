@@ -1,9 +1,13 @@
 # Atividade para PWEB com Leonardo Fernandes
 
-**Alícia Pereira dos Santos Lima**
+**Alícia Pereira dos Santos Lima** <br>
 @aliciapslima
-**Christianny Kelly Silva dos Santos**
+<br>
+**Christianny Kelly Silva dos Santos**<br>
 @chrixtianny
-**Gabriel dos Santos Moreira**
+<br>
+**Gabriel dos Santos Moreira**<br>
 @gabomoreira
+<br>
+<br>
 Consumo de API Json Placeholder a partir requisição fetch. 06/09
