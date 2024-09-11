@@ -56,3 +56,26 @@ async function showFacts() {
 }
 
 createContentTwo();
+
+async function getApiThree(text) {
+   const response =  await fetch(`https://api.funtranslations.com/translate/minion.json?text=${text}`)
+    const data = await response.json();
+    console.log(data);
+    return data;
+    }
+
+async function createContentThree() {
+    const text = document.getElementById('input_text').value
+    const textTranslated = await getApiThree(text);
+    showTextTranslate(textTranslated);
+}
+
+async function showTextTranslate(textTranslated) {
+    const fact = facts.text;
+    const factContainer = document.getElementById("section-three-content");
+    factContainer.innerHTML = `
+        <p class="fact-text">${textTranslated.contents.translated}</p>
+    `;
+}
+
+createContentThree();

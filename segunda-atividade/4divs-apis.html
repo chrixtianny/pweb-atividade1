@@ -86,6 +86,37 @@
             cursor: pointer;
             border-radius: 5px;
         }
+
+        .input-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            color: #333;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        ::placeholder {
+            color: #aaa;
+        }
     </style>
 </head>
 
@@ -107,7 +138,13 @@
     <!-- Seção 3: Atualizada com uma API pública -->
     <div id="section3" class="section">
         <h2 class="section-title">Seção 3</h2>
-        <p>Aguarde, carregando dados...</p>
+        <h2 style="text-align: center;">Traducão do inglês para linguagem dos Minions</h2>
+        <div class="input-container">
+            <input id="input_text" type="text" placeholder="Digite algo...">
+            <button  onclick="createContentThree()" class="fact-button">Traduzir</button>
+        </div>
+        <div id="section-three-content">
+        </div>
     </div>
 
     <!-- Seção 4: Atualizada com uma API pública -->
