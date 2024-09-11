@@ -1,7 +1,6 @@
 # Atividade para PWEB com Leonardo Fernandes
 
-Consumo de API Json Placeholder a partir requisição fetch. <br>
-Atividade realizada em 06/09/2024
+Consumo de APIs a partir de requisição fetch. <br>
 
 Grupo:
 
