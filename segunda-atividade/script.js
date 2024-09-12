@@ -79,3 +79,29 @@ async function showTextTranslate(textTranslated) {
 }
 
 createContentThree();
+
+async function getApiFour() {
+    const response = await fetch("https://api.chucknorris.io/jokes/random");
+    const data = await response.json();
+    console.log(data);
+    return data;
+}
+
+async function createContentFour() {
+    const jokes = await getApiFour();
+    showJokes(jokes);
+}
+
+function showJokes(jokes) {
+    const joke = jokes.value;
+    const jokeContainer = document.getElementById("section-four-content");
+    jokeContainer.innerHTML = `
+        <h2 class="joke-title">Piadas do Chuck Norris</h2>
+        <p class="fact-text">${joke}</p>
+        <span class="fact-buttons">
+        <button onclick="createContentFour()" class="fact-button">Outra piada</button>
+        </span>
+    `;
+}
+
+createContentFour();
